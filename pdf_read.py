@@ -7,7 +7,8 @@ def instructions_read(file_pdf):
     df = read_pdf(file_pdf,pages="all")
     instructions_df = df[0].iloc[:,0].dropna()
     sorted_df = pd.DataFrame(columns=['Installation Instructions'])
-    j = instruction = ''
+    j = 1
+    instruction = ''
 
     for i in instructions_df[1:]:
         if i.find(str(j)+'.') == 0:
