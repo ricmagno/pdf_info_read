@@ -26,4 +26,3 @@ files = glob.glob("*.pdf")
 for file_pdf in files:
     print('Running ', file_pdf)
     instructions_read(file_pdf)
-
